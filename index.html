@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
   </head>
 
@@ -57,13 +58,44 @@
       </div>
     </nav>
 
+
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Welcome To Crispr Productions!</div>
-          <div class="intro-heading text-uppercase"></div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+      <div class="slideshow-container">
+        <br><br><br>
+      <div class="mySlides">
+        <!-- <div class="numbertext">1 / 3</div>-->
+        <img src="img/header-bg2.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+      <div class="mySlides">
+        <!-- <div class="numbertext">2 / 3</div> -->
+        <img src="img/picofus.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides">
+        <!-- <div class="numbertext">3 / 3</div> -->
+        <img src="img/missionary.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To Crispr Productions!</div>
+        <div class="intro-heading text-uppercase"></div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
         </div>
       </div>
     </header>
@@ -411,6 +443,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <div id="googleMap" style="width:100%;height:400px;"></div>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
@@ -709,7 +742,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-
+    <script src="js/additional.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxm7ePzDLSAmM-sVsvavAR3wF84VTgaVE&callback=myMap"></script>
   </body>
+
 
 </html>
